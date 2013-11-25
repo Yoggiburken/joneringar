@@ -33,7 +33,7 @@ int main()
 		string guess;
 		r_jon = rand()%jonfor.size();
 		cout<<jonfor[r_jon].namn<<endl;
-		cin>>guess;
+		getline(cin, guess);
 		if(guess == jonfor[r_jon].formel) {
 			cout<<"RIGHT!!"<<endl;
 		} else {
@@ -41,5 +41,6 @@ int main()
 			cout<<"'"<<jonfor[r_jon].formel<<"'"<<endl;
 		}
 		guess.clear();
+		cin.clear();
 	}
 }
