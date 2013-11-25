@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 	srand(time(NULL));
-	vector<string> jonfor;
+	vector<Jonfor> jonfor;
 	ifstream file;
 	file.open("joner.txt");
 	do {
@@ -18,17 +18,28 @@ int main()
 		getline(file, temp);
 		pos = temp.find(',');
 		temp_jon = temp.substr(0, pos);
-		temp_namn = temp.substr(pos, temp.size());
-		cout<<temp_jon<<"     "<<temp_namn<<endl;
-		jonfor.push_back(temp);
+		temp_namn = temp.substr(pos+1, temp.size());
+		Jonfor temp_jonfor;
+		temp_jonfor.namn = temp_namn;
+		temp_jonfor.formel  = temp_jon;
+		jonfor.push_back(temp_jonfor);
 	} while(!file.eof());
-	
 	file.close();
+	
 	bool running = true;
 	int  r_jon;
 	while(running)
 	{
+		string guess;
 		r_jon = rand()%jonfor.size();
-		
+		cout<<jonfor[r_jon].namn<<endl;
+		cin>>guess;
+		if(guess == jonfor[r_jon].formel) {
+			cout<<"RIGHT!!"<<endl;
+		} else {
+			cout<<"WRONG!!"<<endl;
+			cout<<"'"<<jonfor[r_jon].formel<<"'"<<endl;
+		}
+		guess.clear();
 	}
 }
