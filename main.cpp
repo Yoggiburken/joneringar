@@ -17,7 +17,9 @@ int main()
 	} while(!file.eof());
 	file.close();
 	bool running = true;
+	int  r_jon;
 	while(running)
 	{
+		r_jon = rand()%jonfor.size();
 	}
 }
