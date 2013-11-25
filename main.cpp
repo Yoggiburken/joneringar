@@ -1,3 +1,5 @@
+#include"Jonfor.hpp"
+
 #include<iostream>
 #include<fstream>
 #include<vector>
@@ -21,5 +23,6 @@ int main()
 	while(running)
 	{
 		r_jon = rand()%jonfor.size();
+		
 	}
 }
