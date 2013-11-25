@@ -1,9 +1,9 @@
-OH  [-]
-CN  [-]
-SO4 [2-]
-SO3 [2-]
-NO3 [-]
-NO2 [-]
-CO2 [3-]
-PO4 [3-]
-NH4 [+]
+OH  [-] ,Hydroxidjon
+CN  [-] ,Cyanidjon
+SO4 [2-] ,Sulfatjon
+SO3 [2-] ,Sulfitjon
+NO3 [-] ,Nitratjon
+NO2 [-] ,Nitritjon
+CO2 [3-] ,Karbonatjon
+PO4 [3-] ,Fosfatjon
+NH4 [+] ,Ammoniumjon
