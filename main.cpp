@@ -32,13 +32,12 @@ int main()
 	{
 		string guess;
 		r_jon = rand()%jonfor.size();
-		cout<<jonfor[r_jon].namn<<endl;
+		cout<<"Question: "<<jonfor[r_jon].namn<<endl;
 		getline(cin, guess);
 		if(guess == jonfor[r_jon].formel) {
-			cout<<"RIGHT!!"<<endl;
+			cout<<"Right!"<<endl;
 		} else {
-			cout<<"WRONG!!"<<endl;
-			cout<<"'"<<jonfor[r_jon].formel<<"'"<<endl;
+			cout<<"Wrong!  Right answer is: '"<<jonfor[r_jon].formel<<"'"<<endl;
 		}
 		guess.clear();
 		cin.clear();
