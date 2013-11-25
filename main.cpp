@@ -13,10 +13,16 @@ int main()
 	ifstream file;
 	file.open("joner.txt");
 	do {
-		string temp;
+		string temp, temp_jon, temp_namn;
+		size_t pos;
 		getline(file, temp);
+		pos = temp.find(',');
+		temp_jon = temp.substr(0, pos);
+		temp_namn = temp.substr(pos, temp.size());
+		cout<<temp_jon<<"     "<<temp_namn<<endl;
 		jonfor.push_back(temp);
 	} while(!file.eof());
+	
 	file.close();
 	bool running = true;
 	int  r_jon;
